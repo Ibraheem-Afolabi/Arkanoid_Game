@@ -1,0 +1,13 @@
+PointLight2D
+CollisionShape2D
+Area2D
+Sprite2D
+Timer
+CanvasModulate
+DirectionalLight2D
+MeshInstance2D
+TileMap
+ParallaxLayer
+ParallaxBackground
+Label
+Node2D

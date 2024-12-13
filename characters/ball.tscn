@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://d1s7wi5wc8o54"]
+
+[ext_resource type="Texture2D" uid="uid://bumf3vavhblef" path="res://assets/img/SumRndmDde/hud/gauge_backs/SimpleBack.png" id="1_nno0s"]
+[ext_resource type="Script" path="res://characters/ball.gd" id="2_w7avn"]
+[ext_resource type="Texture2D" uid="uid://brf564ybk4n7e" path="res://assets/BG/circle.png" id="3_4r1d3"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_1ywxx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_e2516"]
+
+[node name="Ball" type="MeshInstance2D"]
+modulate = Color(0.0064667, 0.0064667, 0.00646669, 1)
+scale = Vector2(2, 2)
+mesh = SubResource("SphereMesh_1ywxx")
+texture = ExtResource("1_nno0s")
+script = ExtResource("2_w7avn")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(0.05, 0.05)
+shape = SubResource("CircleShape2D_e2516")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+scale = Vector2(0.076875, 0.075)
+color = Color(0.883378, 0.883378, 0.883378, 1)
+energy = 0.5
+range_z_min = -100
+range_z_max = 100
+shadow_enabled = true
+shadow_filter = 1
+texture = ExtResource("3_4r1d3")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

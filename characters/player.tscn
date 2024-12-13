@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbgg70u0gkn8m"]
+
+[ext_resource type="Texture2D" uid="uid://byxwmeiewq3cf" path="res://assets/img/image (2).png" id="1_s4nng"]
+[ext_resource type="Script" path="res://characters/player.gd" id="2_m6v64"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rvwc6"]
+radius = 14.0
+height = 190.0
+
+[node name="Player" type="Sprite2D"]
+position = Vector2(-7.99999, 3)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_s4nng")
+script = ExtResource("2_m6v64")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
+position = Vector2(0.999992, 0)
+rotation = 1.57089
+shape = SubResource("CapsuleShape2D_rvwc6")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.294641, 0.294641, 0.294641, 1)
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

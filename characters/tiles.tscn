@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwkfv210dowde"]
+
+[ext_resource type="Texture2D" uid="uid://dskfbmmb8e32q" path="res://assets/SBS - Tiny Breakout Pack/Bricks/Colored/Colored_Orange-128x32.png" id="1_ydr61"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dxr3h"]
+size = Vector2(126, 30)
+
+[node name="Tiles" type="Sprite2D" groups=["Tiles"]]
+position = Vector2(13.75, 0.5)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_ydr61")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-0.499998, 0)
+shape = SubResource("RectangleShape2D_dxr3h")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
+color = Color(0.289278, 0.175836, 0.121982, 1)

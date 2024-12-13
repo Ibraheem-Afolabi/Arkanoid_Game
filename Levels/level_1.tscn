@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://blqxwbec84m66"]
+
+[ext_resource type="Script" path="res://Levels/level_1.gd" id="1_krg2t"]
+[ext_resource type="PackedScene" uid="uid://cbgg70u0gkn8m" path="res://characters/player.tscn" id="1_ma0kg"]
+[ext_resource type="PackedScene" uid="uid://d1s7wi5wc8o54" path="res://characters/ball.tscn" id="2_bdk4s"]
+[ext_resource type="PackedScene" uid="uid://10oc8m1ap8gv" path="res://Levels/BG.tscn" id="2_ybmox"]
+[ext_resource type="PackedScene" uid="uid://c8b2yqpnjdyya" path="res://Levels/tile_map.tscn" id="5_w5gx4"]
+
+[node name="Level_1" type="Node2D"]
+script = ExtResource("1_krg2t")
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+color = Color(0.0475577, 0.0475576, 0.0475576, 1)
+energy = 2.43
+
+[node name="BG" parent="." instance=ExtResource("2_ybmox")]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 334.0
+offset_top = 405.0
+offset_right = 395.0
+offset_bottom = 428.0
+text = "HAJIME!
+"
+
+[node name="TileMap" parent="." instance=ExtResource("5_w5gx4")]
+scale = Vector2(1.5, 1.5)
+layer_0/tile_data = PackedInt32Array(65536, 0, 2, 131072, 0, 3, 196608, 0, 2, 262144, 0, 3, 327680, 0, 2, 393216, 0, 3, 458752, 0, 2, 524288, 0, 3, 589824, 0, 2, 655360, 0, 3, 720896, 0, 2, 786432, 0, 3, 851968, 0, 2, 917504, 0, 3, 983040, 0, 2, 1048576, 0, 3, 1114112, 0, 2, 1179648, 0, 3, 1245184, 0, 2, 1310720, 0, 3, 1376256, 0, 2, 1441792, 0, 3, 1507328, 0, 2, 1572864, 0, 3, -65536, 0, 2, 0, 0, 3, 33, 393216, 4, 65569, 393216, 4, 131105, 393216, 4, 196641, 393216, 4, 262177, 393216, 4, 327713, 393216, 4, 393249, 393216, 4, 458785, 393216, 4, 524321, 393216, 4, 589857, 393216, 4, 655393, 393216, 4, 720929, 393216, 4, 786465, 393216, 4, 852001, 393216, 4, 917537, 393216, 4, 983073, 393216, 4, 1048609, 393216, 4, 1114145, 393216, 4, 1179681, 393216, 4, 1245217, 393216, 4, 1310753, 393216, 4, 1376289, 393216, 4, 1441825, 393216, 4, 1507361, 393216, 4, 1572897, 393216, 4)
+
+[node name="Player" parent="." instance=ExtResource("1_ma0kg")]
+position = Vector2(658, 537)
+
+[node name="Ball" parent="." instance=ExtResource("2_bdk4s")]
+position = Vector2(605, 430)
+scale = Vector2(20, 20)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

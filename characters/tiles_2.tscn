@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5k7gfijd2ty5"]
+
+[ext_resource type="Texture2D" uid="uid://d4jwt55y64qdp" path="res://assets/SBS - Tiny Breakout Pack/Balls/Textured_Brick_03-128x32.png" id="1_xbeg0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8w7n1"]
+size = Vector2(128, 32)
+
+[node name="tiles2" type="Sprite2D" groups=["Tiles"]]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_xbeg0")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_8w7n1")

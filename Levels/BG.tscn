@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://10oc8m1ap8gv"]
+
+[ext_resource type="Script" path="res://Levels/bg.gd" id="1_w1mw4"]
+[ext_resource type="Texture2D" uid="uid://ds0k3gogp7kbb" path="res://assets/BG/dirt.png" id="2_mvfpy"]
+
+[node name="BG" type="ParallaxBackground"]
+script = ExtResource("1_w1mw4")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+
+[node name="Dirt" type="Sprite2D" parent="ParallaxLayer"]
+texture_repeat = 2
+texture = ExtResource("2_mvfpy")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 924, 924)
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
