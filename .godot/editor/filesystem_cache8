@@ -1,6 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1734130711
+::res://::1734134509
 icon.svg::CompressedTexture2D::8532627926610835484::1733865455::1733865476::1::::<><>::
+README.md::TextFile::-1::1734133892::0::1::::<><>::
 ::res://assets/::1734041324
 ::res://assets/BG/::1734040622
 circle.png::CompressedTexture2D::3591831344016411040::1718642572::1734040622::1::::<><>::
@@ -170,7 +171,7 @@ Tiles.png::CompressedTexture2D::523701001410691806::1667234174::1734041331::1:::
 Tree-Assets.png::CompressedTexture2D::1118209288457630424::1667234190::1734041331::1::::<><>::
 ::res://assets/SBS - Tiny Breakout Pack/::1734032241
 License.txt::TextFile::-1::1673145958::0::1::::<><>::
-::res://assets/SBS - Tiny Breakout Pack/Balls/::1734130711
+::res://assets/SBS - Tiny Breakout Pack/Balls/::1734130712
 Textured_Brick_03-128x32.png::CompressedTexture2D::9214689243471507341::1673128441::1734130712::1::::<><>::
 ::res://assets/SBS - Tiny Breakout Pack/Balls/Glass/::1734040622
 Ball_Blue_Glass-16x16.png::CompressedTexture2D::8015580204207626505::1673121039::1734040622::1::::<><>::
@@ -280,16 +281,16 @@ Paddle_C_Red_96x28.png::CompressedTexture2D::248152456465775177::1673115500::173
 Paddle_C_Red_128x28.png::CompressedTexture2D::2612634566510394476::1673115510::1734040621::1::::<><>::
 Paddle_C_Red_160x28.png::CompressedTexture2D::2501661898068968346::1673115520::1734040621::1::::<><>::
 Paddle_C_Red_192x28.png::CompressedTexture2D::8426014955063181705::1673115528::1734040621::1::::<><>::
-::res://characters/::1734130711
+::res://characters/::1734133994
 ball.gd::GDScript::-1::1734126554::0::1::::<>MeshInstance2D<>::
-ball.tscn::PackedScene::9023313484010155577::1734130643::0::1::::<><>::uid://dttjeuotkjhqy::::res://icon.svg<>res://characters/ball.gd
+ball.tscn::PackedScene::9023313484010155577::1734133994::0::1::::<><>::uid://bumf3vavhblef::::res://assets/img/SumRndmDde/hud/gauge_backs/SimpleBack.png<>res://characters/ball.gd<>uid://brf564ybk4n7e::::res://assets/BG/circle.png
 player.gd::GDScript::-1::1734126583::0::1::::<>Sprite2D<>::
-player.tscn::PackedScene::4855839270034303346::1734130643::0::1::::<><>::uid://byxwmeiewq3cf::::res://assets/img/image (2).png<>res://characters/player.gd
-tiles.tscn::PackedScene::3951561567342085506::1734130643::0::1::::<><>::uid://dskfbmmb8e32q::::res://assets/SBS - Tiny Breakout Pack/Bricks/Colored/Colored_Orange-128x32.png
-tiles_2.tscn::PackedScene::4514683704295824450::1734130711::0::1::::<><>::uid://d4jwt55y64qdp::::res://assets/SBS - Tiny Breakout Pack/Balls/Textured_Brick_03-128x32.png
-::res://Levels/::1734130643
+player.tscn::PackedScene::4855839270034303346::1734131250::0::1::::<><>::uid://byxwmeiewq3cf::::res://assets/img/image (2).png<>res://characters/player.gd
+tiles.tscn::PackedScene::3951561567342085506::1734131250::0::1::::<><>::uid://dskfbmmb8e32q::::res://assets/SBS - Tiny Breakout Pack/Bricks/Colored/Colored_Orange-128x32.png
+tiles_2.tscn::PackedScene::4514683704295824450::1734131251::0::1::::<><>::uid://d4jwt55y64qdp::::res://assets/SBS - Tiny Breakout Pack/Balls/Textured_Brick_03-128x32.png
+::res://Levels/::1734131251
 bg.gd::GDScript::-1::1733956433::0::1::::<>ParallaxBackground<>::
-BG.tscn::PackedScene::1877374740917033373::1734130643::0::1::::<><>::res://Levels/bg.gd<>uid://ds0k3gogp7kbb::::res://assets/BG/dirt.png
+BG.tscn::PackedScene::1877374740917033373::1734131251::0::1::::<><>::res://Levels/bg.gd<>uid://ds0k3gogp7kbb::::res://assets/BG/dirt.png
 level_1.gd::GDScript::-1::1734130643::0::1::::<>Node2D<>::
-level_1.tscn::PackedScene::3192963844914642597::1734130643::0::1::::<><>::res://Levels/level_1.gd<>uid://cbgg70u0gkn8m::::res://characters/player.tscn<>uid://d1s7wi5wc8o54::::res://characters/ball.tscn<>uid://10oc8m1ap8gv::::res://Levels/BG.tscn<>uid://c8b2yqpnjdyya::::res://Levels/tile_map.tscn
-tile_map.tscn::PackedScene::7092820667202245144::1734130643::0::1::::<><>::uid://cpdvqgepcog3p::::res://assets/Maps/Hive_and_Rocks/Interior-01.png
+level_1.tscn::PackedScene::3192963844914642597::1734131250::0::1::::<><>::res://Levels/level_1.gd<>uid://cbgg70u0gkn8m::::res://characters/player.tscn<>uid://d1s7wi5wc8o54::::res://characters/ball.tscn<>uid://10oc8m1ap8gv::::res://Levels/BG.tscn<>uid://c8b2yqpnjdyya::::res://Levels/tile_map.tscn
+tile_map.tscn::PackedScene::7092820667202245144::1734131251::0::1::::<><>::uid://cpdvqgepcog3p::::res://assets/Maps/Hive_and_Rocks/Interior-01.png

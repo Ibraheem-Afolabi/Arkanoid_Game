@@ -4,7 +4,4 @@ res://characters/ball.tscn
 res://characters/tiles.tscn
 res://Levels/BG.tscn
 res://Levels/tile_map.tscn
-res://characters/player.gd
-res://characters/ball.gd
-res://Levels/level_1.gd
 res://characters/tiles_2.tscn
